@@ -4,29 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6102baac-c2d9-496a-bebd-d3f18fb61273" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GestionProjetJava.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hepl/java/MVC/model/entity/Appartement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hepl/java/MVC/model/entity/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hepl/java/MVC/model/entity/Employe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hepl/java/MVC/model/entity/Image.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hepl/java/MVC/model/entity/Option.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hepl/java/MVC/model/entity/Personne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hepl/java/MVC/model/reservation/CalculFacture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hepl/java/MVC/model/reservation/Reservation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hepl/java/MVC/view/Gui/JDialogAppart.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hepl/java/MVC/view/Gui/JDialogAppart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hepl/java/MVC/view/Gui/JDialogConnexion.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hepl/java/MVC/view/Gui/JDialogConnexion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hepl/java/MVC/view/Gui/JFrameReservation.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hepl/java/MVC/view/Gui/JFrameReservation.java" afterDir="false" />
+    <list default="true" id="6102baac-c2d9-496a-bebd-d3f18fb61273" name="Changes" comment="class vide">
+      <change afterPath="$PROJECT_DIR$/src/hepl/java/MVC/view/Gui/JDialogNouveauEmploye.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hepl/java/MVC/view/Gui/JDialogNouveauEmploye.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hepl/java/MVC/view/Gui/JdialogNouveauClient.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hepl/java/MVC/view/Gui/JdialogNouveauClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hepl/java/MVC/view/Gui/JFrameReservation.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/hepl/java/MVC/view/Gui/JFrameReservation.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hepl/java/MVC/view/Gui/JFrameReservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hepl/java/MVC/view/Gui/JFrameReservation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -58,32 +43,37 @@
     "Application.Appartement.executor": "Run",
     "Application.Client.executor": "Run",
     "Application.JDialogAppart.executor": "Run",
+    "Application.JDialogNewClient.executor": "Run",
+    "Application.JDialogNouveauEmploye.executor": "Run",
     "Application.JFrameReservation.executor": "Run",
+    "Application.JdialogNouveauClient.executor": "Run",
     "Application.Option.executor": "Run",
     "Application.Personne.executor": "Run",
     "Application.Reservation.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "338",
-    "git-widget-placeholder": "master",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "110",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "347",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/JAVA/GestionProjetJava",
+    "last_opened_file_path": "D:/JAVA/JAVAProjetGarage-main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "configurable.group.editor",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Reservation">
-    <configuration name="Appartement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hepl.java.MVC.model.entity.Appartement" />
+  <component name="RunManager" selected="Application.JDialogNouveauEmploye">
+    <configuration name="JDialogNewClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hepl.java.MVC.view.Gui.JDialogNewClient" />
       <module name="GestionProjetJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hepl.java.MVC.model.entity.*" />
+          <option name="PATTERN" value="hepl.java.MVC.view.Gui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,12 +81,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hepl.java.MVC.model.entity.Client" />
+    <configuration name="JDialogNouveauEmploye" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hepl.java.MVC.view.Gui.JDialogNouveauEmploye" />
       <module name="GestionProjetJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hepl.java.MVC.model.entity.*" />
+          <option name="PATTERN" value="hepl.java.MVC.view.Gui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,12 +107,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Option" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hepl.java.MVC.model.entity.Option" />
+    <configuration name="JdialogNouveauClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hepl.java.MVC.view.Gui.JdialogNouveauClient" />
       <module name="GestionProjetJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hepl.java.MVC.model.entity.*" />
+          <option name="PATTERN" value="hepl.java.MVC.view.Gui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Reservation" />
+        <item itemvalue="Application.JDialogNouveauEmploye" />
+        <item itemvalue="Application.JdialogNouveauClient" />
+        <item itemvalue="Application.JDialogNewClient" />
         <item itemvalue="Application.JFrameReservation" />
-        <item itemvalue="Application.Appartement" />
-        <item itemvalue="Application.Option" />
-        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Reservation" />
       </list>
     </recent_temporary>
   </component>
@@ -170,10 +160,25 @@
       <updated>1711634042286</updated>
       <workItem from="1711634043357" duration="13874000" />
       <workItem from="1711708174507" duration="3695000" />
+      <workItem from="1712010116714" duration="949000" />
+      <workItem from="1712049159798" duration="9154000" />
     </task>
+    <task id="LOCAL-00001" summary="class vide">
+      <option name="closed" value="true" />
+      <created>1712010749666</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1712010749666</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="class vide" />
+    <option name="LAST_COMMIT_MESSAGE" value="class vide" />
   </component>
 </project>
