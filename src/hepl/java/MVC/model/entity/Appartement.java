@@ -7,19 +7,17 @@ import java.util.Objects;
 public class Appartement {
     private int id;
     private String Nom;
-    private ImageIcon[] images; // Tableau pour stocker des images de l'appartement
+    private ImageIcon[] images;
     private String adresse;
     private double superficie;
     private int nbChambres;
     private double prixLocation;
 
-    // Constructeur par défaut
     public Appartement() {
 
     }
 
-    // Constructeur avec tous les attributs, incluant le tableau d'images
-    public Appartement(int id, String nom, ImageIcon[] images, String adresse, double superficie, int nbChambres, double prixLocation) {
+   public Appartement(int id, String nom, ImageIcon[] images, String adresse, double superficie, int nbChambres, double prixLocation) {
         this.id = id;
         this.Nom = nom;
         this.images = images;
@@ -28,8 +26,6 @@ public class Appartement {
         this.nbChambres = nbChambres;
         this.prixLocation = prixLocation;
     }
-
-    // Getters et Setters y compris pour les images
     public int getId() {
         return id;
     }

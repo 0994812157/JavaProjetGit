@@ -1,7 +1,7 @@
 package hepl.java.MVC.model.entity;
 import java.time.LocalDate;
 
-public class Personne {
+public class Personne implements EstIdentifiable{
     private String Nom;
     private String Prenom;
     private LocalDate dateNaissance;
@@ -27,9 +27,9 @@ public class Personne {
     }
 
     public Personne() {
-        Nom = "inconnu";
-        Prenom = "inconnu";
-        dateNaissance = LocalDate.of(2000, 1, 1);
+        this.Nom = "inconnu";
+        this.Prenom = "inconnu";
+        this.dateNaissance = LocalDate.of(2000, 1, 1);
     }
 
     public Personne(String nom, String prenom) {
@@ -37,17 +37,22 @@ public class Personne {
     }
 
     public Personne(String nom, String prenom, LocalDate ddn) {
-        Nom = nom;
-        Prenom = prenom;
-        dateNaissance = ddn;
+        this.Nom = nom;
+        this.Prenom = prenom;
+        this.dateNaissance = ddn;
+    }
+
+    @Override
+    public int getNumero() {
+        return 0;
     }
 
     @Override
     public String toString() {
         return "Personne{" +
-                "Nom='" + Nom + '\'' +
-                ", Prenom='" + Prenom + '\'' +
-                ", dateNaissance=" + dateNaissance +
+                "Nom = '" + Nom + '\'' +
+                ", Prenom = '" + Prenom + '\'' +
+                ", dateNaissance = " + dateNaissance +
                 '}';
     }
 

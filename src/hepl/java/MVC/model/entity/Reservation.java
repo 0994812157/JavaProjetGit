@@ -1,16 +1,11 @@
-package hepl.java.MVC.model.reservation;
-
-import hepl.java.MVC.model.entity.Appartement;
-import hepl.java.MVC.model.entity.Client;
-import hepl.java.MVC.model.entity.Employe;
-import hepl.java.MVC.model.entity.Option;
+package hepl.java.MVC.model.entity;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Reservation {
-    private static int dernierNumReservation = 0; // Compteur statique
+    private static int dernierNumReservation = 0;
     private int numReservation;
     private int nbPersonne;
     private int nbNuits;
