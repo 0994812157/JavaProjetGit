@@ -1,5 +1,7 @@
 package hepl.java.MVC.view.Gui;
 
+import hepl.java.MVC.model.entity.Employe;
+
 import javax.swing.*;
 
 public class JFrameReservation extends JFrame {
@@ -34,6 +36,9 @@ public class JFrameReservation extends JFrame {
     private JButton supprimerButton;
     private JButton factureButton;
 
+    private JMenuItem Cli, Emp;
+
+
     public JFrameReservation()
     {
 
@@ -46,10 +51,19 @@ public class JFrameReservation extends JFrame {
         JMenuBar Jmenubar = new JMenuBar();
         JMenu connexion = new JMenu("Connexion");
         Jmenubar.add(connexion);
+        JMenu addNewPersonne = new JMenu("Ajouter Personne");
+        Jmenubar.add(addNewPersonne);
+        //JMenuItem cli, emp;
+        Cli = new JMenuItem("Client");
+        Emp = new JMenuItem("Employé");
+        addNewPersonne.add(Cli);
+        addNewPersonne.add(Emp);
+
+        /*
         JMenu addNewEmploye = new JMenu("Ajouter employe");
         Jmenubar.add(addNewEmploye);
         JMenu addNewAppart = new JMenu("Ajouter appartement");
-        Jmenubar.add(addNewAppart);
+        Jmenubar.add(addNewAppart);*/
 
         setJMenuBar(Jmenubar);
 

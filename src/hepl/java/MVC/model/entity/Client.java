@@ -5,14 +5,17 @@ import java.util.Objects;
 public class Client extends Personne {
     private String NumTel;
     private static int NumClient = 0;
+    private int NClient;
 
     public Client() {
         super();
+        this.NClient = ++NumClient;
         this.NumTel = "04/";
     }
 
     public Client(String nom, String prenom, LocalDate ddn, String gsm) {
         super(nom, prenom, ddn);
+        this.NClient = ++NumClient;
         this.NumTel = gsm;
     }
 
@@ -27,6 +30,7 @@ public class Client extends Personne {
     @Override
     public String toString() {
         return super.toString() + "Client{" +
+                ", NumClient='" + NClient + '\'' +
                 ", NumTel='" + NumTel + '\'' +
                 '}';
     }

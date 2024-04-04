@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6102baac-c2d9-496a-bebd-d3f18fb61273" name="Changes" comment="ajout de photo appart">
+    <list default="true" id="6102baac-c2d9-496a-bebd-d3f18fb61273" name="Changes" comment="correction et adaptation des classe, il reste Reservation.java">
+      <change afterPath="$PROJECT_DIR$/src/hepl/java/MVC/view/Gui/JFrameFenetreFinal.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hepl/java/MVC/view/Gui/JFrameFenetreFinal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hepl/java/MVC/model/entity/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hepl/java/MVC/model/entity/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hepl/java/MVC/model/entity/Employe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hepl/java/MVC/model/entity/Employe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hepl/java/MVC/model/entity/Personne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hepl/java/MVC/model/entity/Personne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hepl/java/MVC/model/entity/TestVide.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hepl/java/MVC/view/Gui/JDialogAppart.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hepl/java/MVC/view/Gui/JDialogAppart.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hepl/java/MVC/view/Gui/JFrameReservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hepl/java/MVC/view/Gui/JFrameReservation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,9 +44,11 @@
     "Application.Appartement.executor": "Run",
     "Application.Client.executor": "Run",
     "Application.JDialogAppart.executor": "Run",
+    "Application.JDialogConnexion.executor": "Run",
     "Application.JDialogNewClient.executor": "Run",
     "Application.JDialogNouveauEmploye.executor": "Run",
     "Application.JDialogNouvelAppart.executor": "Run",
+    "Application.JFrameFenetreFinal.executor": "Run",
     "Application.JFrameReservation.executor": "Run",
     "Application.JdialogNouveauClient.executor": "Run",
     "Application.Option.executor": "Run",
@@ -65,13 +71,13 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.JDialogNouvelAppart">
-    <configuration name="JDialogNewClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hepl.java.MVC.view.Gui.JDialogNewClient" />
+  <component name="RunManager" selected="Application.Employe">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hepl.java.MVC.model.entity.Client" />
       <module name="GestionProjetJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hepl.java.MVC.view.Gui.*" />
+          <option name="PATTERN" value="hepl.java.MVC.model.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -79,12 +85,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JDialogNouveauEmploye" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hepl.java.MVC.view.Gui.JDialogNouveauEmploye" />
+    <configuration name="Employe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hepl.java.MVC.model.entity.Employe" />
       <module name="GestionProjetJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hepl.java.MVC.view.Gui.*" />
+          <option name="PATTERN" value="hepl.java.MVC.model.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -94,6 +100,19 @@
     </configuration>
     <configuration name="JDialogNouvelAppart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hepl.java.MVC.view.Gui.JDialogNouvelAppart" />
+      <module name="GestionProjetJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hepl.java.MVC.view.Gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JFrameFenetreFinal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hepl.java.MVC.view.Gui.JFrameFenetreFinal" />
       <module name="GestionProjetJava" />
       <extension name="coverage">
         <pattern>
@@ -118,26 +137,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdialogNouveauClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hepl.java.MVC.view.Gui.JdialogNouveauClient" />
-      <module name="GestionProjetJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="hepl.java.MVC.view.Gui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JDialogNouvelAppart" />
-        <item itemvalue="Application.JDialogNouveauEmploye" />
-        <item itemvalue="Application.JdialogNouveauClient" />
-        <item itemvalue="Application.JDialogNewClient" />
+        <item itemvalue="Application.Employe" />
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.JFrameFenetreFinal" />
         <item itemvalue="Application.JFrameReservation" />
+        <item itemvalue="Application.JDialogNouvelAppart" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +166,8 @@
       <workItem from="1711708174507" duration="3695000" />
       <workItem from="1712010116714" duration="949000" />
       <workItem from="1712049159798" duration="9359000" />
-      <workItem from="1712078855309" duration="9323000" />
+      <workItem from="1712078855309" duration="11180000" />
+      <workItem from="1712219675115" duration="6982000" />
     </task>
     <task id="LOCAL-00001" summary="class vide">
       <option name="closed" value="true" />
@@ -194,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712088035700</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="correction et adaptation des classe, il reste Reservation.java">
+      <option name="closed" value="true" />
+      <created>1712092470623</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712092470623</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +220,7 @@
     <MESSAGE value="creation de boite de dialog, empl et client" />
     <MESSAGE value="creation de la boite dialog new appart + GUI" />
     <MESSAGE value="ajout de photo appart" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout de photo appart" />
+    <MESSAGE value="correction et adaptation des classe, il reste Reservation.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="correction et adaptation des classe, il reste Reservation.java" />
   </component>
 </project>
