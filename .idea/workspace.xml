@@ -4,15 +4,50 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6102baac-c2d9-496a-bebd-d3f18fb61273" name="Changes" comment="correction et adaptation des classe, il reste Reservation.java">
-      <change afterPath="$PROJECT_DIR$/src/hepl/java/MVC/view/Gui/JFrameFenetreFinal.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hepl/java/MVC/view/Gui/JFrameFenetreFinal.java" afterDir="false" />
+    <list default="true" id="6102baac-c2d9-496a-bebd-d3f18fb61273" name="Changes" comment="on est pret pour la 1er Eval">
+      <change afterPath="$PROJECT_DIR$/src/MVC/model/entity/Appartement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/model/entity/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/model/entity/Employe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/model/entity/EstIdentifiable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/model/entity/Image.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/model/entity/Option.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/model/entity/Personne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/model/entity/Reservation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/model/reservation/CalculFacture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogConnexion.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogConnexion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogNouveauEmploye.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogNouveauEmploye.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogNouvelAppart.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogNouvelAppart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JFrameFenetreFinal.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JFrameFenetreFinal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JFrameReservation.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JFrameReservation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JdialogNouveauClient.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JdialogNouveauClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/Bateau1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/Bateau2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/Bateau3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/Bulle1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/Bulle2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/Bulle3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/Cabane1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/Cabane2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/Cabane3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/GoldenLoft1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/GoldenLoft2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/GoldenLoft3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/Grange1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/Grange2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/Grange3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/Loft1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/Loft2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/Loft3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/Yourte1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/Yourte2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/Yourte3.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hepl/java/MVC/model/entity/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hepl/java/MVC/model/entity/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hepl/java/MVC/model/entity/TestVide.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hepl/java/MVC/view/Gui/JDialogAppart.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hepl/java/MVC/view/Gui/JDialogAppart.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hepl/java/MVC/view/Gui/JFrameReservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hepl/java/MVC/view/Gui/JFrameReservation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +78,7 @@
   "keyToString": {
     "Application.Appartement.executor": "Run",
     "Application.Client.executor": "Run",
+    "Application.Employe.executor": "Run",
     "Application.JDialogAppart.executor": "Run",
     "Application.JDialogConnexion.executor": "Run",
     "Application.JDialogNewClient.executor": "Run",
@@ -61,7 +97,7 @@
     "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "229",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/JAVA/JAVAProjetGarage-main",
+    "last_opened_file_path": "D:/JAVA/GestionProjetJava/src/MVC",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -167,7 +203,8 @@
       <workItem from="1712010116714" duration="949000" />
       <workItem from="1712049159798" duration="9359000" />
       <workItem from="1712078855309" duration="11180000" />
-      <workItem from="1712219675115" duration="6982000" />
+      <workItem from="1712219675115" duration="7260000" />
+      <workItem from="1712824690703" duration="359000" />
     </task>
     <task id="LOCAL-00001" summary="class vide">
       <option name="closed" value="true" />
@@ -209,7 +246,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712092470623</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="on est pret pour la 1er Eval">
+      <option name="closed" value="true" />
+      <created>1712226894342</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1712226894342</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,6 +266,7 @@
     <MESSAGE value="creation de la boite dialog new appart + GUI" />
     <MESSAGE value="ajout de photo appart" />
     <MESSAGE value="correction et adaptation des classe, il reste Reservation.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="correction et adaptation des classe, il reste Reservation.java" />
+    <MESSAGE value="on est pret pour la 1er Eval" />
+    <option name="LAST_COMMIT_MESSAGE" value="on est pret pour la 1er Eval" />
   </component>
 </project>
