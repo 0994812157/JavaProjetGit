@@ -1,6 +1,6 @@
 package MVC.view.Gui;
 
-import hepl.java.MVC.model.entity.Employe;
+import MVC.model.entity.Employe;
 
 import javax.swing.*;
 

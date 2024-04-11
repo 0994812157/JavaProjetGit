@@ -4,50 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6102baac-c2d9-496a-bebd-d3f18fb61273" name="Changes" comment="on est pret pour la 1er Eval">
-      <change afterPath="$PROJECT_DIR$/src/MVC/model/entity/Appartement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/model/entity/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/model/entity/Employe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/model/entity/EstIdentifiable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/model/entity/Image.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/model/entity/Option.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/model/entity/Personne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/model/entity/Reservation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/model/reservation/CalculFacture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogConnexion.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogConnexion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogNouveauEmploye.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogNouveauEmploye.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogNouvelAppart.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogNouvelAppart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JFrameFenetreFinal.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JFrameFenetreFinal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JFrameReservation.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JFrameReservation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JdialogNouveauClient.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JdialogNouveauClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/Bateau1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/Bateau2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/Bateau3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/Bulle1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/Bulle2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/Bulle3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/Cabane1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/Cabane2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/Cabane3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/GoldenLoft1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/GoldenLoft2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/GoldenLoft3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/Grange1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/Grange2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/Grange3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/Loft1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/Loft2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/Loft3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/Yourte1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/Yourte2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/images/Yourte3.jpg" afterDir="false" />
+    <list default="true" id="6102baac-c2d9-496a-bebd-d3f18fb61273" name="Changes" comment="ajout package MVC2">
+      <change afterPath="$PROJECT_DIR$/src/MVC/model/entity/AppartementException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/model/entity/PersonneException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MVC/model/entity/Appartement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/model/entity/Appartement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MVC/model/entity/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/model/entity/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MVC/model/entity/Employe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/model/entity/Employe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MVC/model/entity/Personne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/model/entity/Personne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogConnexion.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogConnexion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogNouveauEmploye.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogNouveauEmploye.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogNouvelAppart.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogNouvelAppart.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MVC/view/Gui/JFrameFenetreFinal.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JFrameFenetreFinal.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MVC/view/Gui/JFrameReservation.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JFrameReservation.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MVC/view/Gui/JFrameReservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JFrameReservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MVC/view/Gui/JdialogNouveauClient.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JdialogNouveauClient.form" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +59,8 @@
     "Application.JFrameFenetreFinal.executor": "Run",
     "Application.JFrameReservation.executor": "Run",
     "Application.JdialogNouveauClient.executor": "Run",
+    "Application.MVC.model.entity.Client.executor": "Run",
+    "Application.MVC.model.entity.Employe.executor": "Run",
     "Application.Option.executor": "Run",
     "Application.Personne.executor": "Run",
     "Application.Reservation.executor": "Run",
@@ -107,13 +81,18 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Employe">
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hepl.java.MVC.model.entity.Client" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JAVA\GestionProjetJava\src\MVC" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.MVC.model.entity.Client">
+    <configuration name="Appartement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MVC.model.entity.Appartement" />
       <module name="GestionProjetJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hepl.java.MVC.model.entity.*" />
+          <option name="PATTERN" value="MVC.model.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,12 +113,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JDialogNouvelAppart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hepl.java.MVC.view.Gui.JDialogNouvelAppart" />
+    <configuration name="MVC.model.entity.Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MVC.model.entity.Client" />
       <module name="GestionProjetJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hepl.java.MVC.view.Gui.*" />
+          <option name="PATTERN" value="MVC.model.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -147,12 +126,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JFrameFenetreFinal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hepl.java.MVC.view.Gui.JFrameFenetreFinal" />
+    <configuration name="MVC.model.entity.Employe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MVC.model.entity.Employe" />
       <module name="GestionProjetJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hepl.java.MVC.view.Gui.*" />
+          <option name="PATTERN" value="MVC.model.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -160,12 +139,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JFrameReservation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hepl.java.MVC.view.Gui.JFrameReservation" />
+    <configuration name="Personne" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MVC.model.entity.Personne" />
       <module name="GestionProjetJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hepl.java.MVC.view.Gui.*" />
+          <option name="PATTERN" value="MVC.model.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -175,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MVC.model.entity.Client" />
+        <item itemvalue="Application.MVC.model.entity.Employe" />
+        <item itemvalue="Application.Personne" />
+        <item itemvalue="Application.Appartement" />
         <item itemvalue="Application.Employe" />
-        <item itemvalue="Application.Client" />
-        <item itemvalue="Application.JFrameFenetreFinal" />
-        <item itemvalue="Application.JFrameReservation" />
-        <item itemvalue="Application.JDialogNouvelAppart" />
       </list>
     </recent_temporary>
   </component>
@@ -204,7 +183,7 @@
       <workItem from="1712049159798" duration="9359000" />
       <workItem from="1712078855309" duration="11180000" />
       <workItem from="1712219675115" duration="7260000" />
-      <workItem from="1712824690703" duration="359000" />
+      <workItem from="1712824690703" duration="5698000" />
     </task>
     <task id="LOCAL-00001" summary="class vide">
       <option name="closed" value="true" />
@@ -254,7 +233,23 @@
       <option name="project" value="LOCAL" />
       <updated>1712226894342</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="ajout package MVC">
+      <option name="closed" value="true" />
+      <created>1712825209851</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712825209851</updated>
+    </task>
+    <task id="LOCAL-00008" summary="ajout package MVC2">
+      <option name="closed" value="true" />
+      <created>1712825394869</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1712825394869</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,6 +262,8 @@
     <MESSAGE value="ajout de photo appart" />
     <MESSAGE value="correction et adaptation des classe, il reste Reservation.java" />
     <MESSAGE value="on est pret pour la 1er Eval" />
-    <option name="LAST_COMMIT_MESSAGE" value="on est pret pour la 1er Eval" />
+    <MESSAGE value="ajout package MVC" />
+    <MESSAGE value="ajout package MVC2" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout package MVC2" />
   </component>
 </project>

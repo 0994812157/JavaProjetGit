@@ -4,6 +4,7 @@ import javax.swing.*;
 
 public class Appartement {
     private int id;
+    private static int idAppart = 0;
     private String Nom;
     private ImageIcon[] images;
     private String adresse;
@@ -12,11 +13,18 @@ public class Appartement {
     private double prixLocation;
 
     public Appartement() {
-
+        id = ++idAppart;
     }
 
-   public Appartement(int id, String nom, ImageIcon[] images, String adresse, double superficie, int nbChambres, double prixLocation) {
-        this.id = id;
+   public Appartement(String nom, ImageIcon[] images, String adresse, double superficie, int nbChambres, double prixLocation) throws AppartementException
+   {
+        this.id = ++idAppart;
+        if (nom.length() <5) throw new AppartementException("Le nom ne peut être inférieur à 5 caractères!");
+        if (adresse.length() <5) throw new AppartementException("L'adresse ne peut être inférieure à 8 caractères!");
+        if (prixLocation < 200 ) throw new AppartementException("Le prix ne peut être inférieur à 200 EURO!");
+        if (nbChambres < 0 || nbChambres >10 ) throw new AppartementException("Le nombre de chambre ne peut être compris que entre 1 et 10!");
+        if (superficie < 100) throw new AppartementException("La superficie ne peut être inférieur à 100m²!");
+
         this.Nom = nom;
         this.images = images;
         this.adresse = adresse;
@@ -94,6 +102,20 @@ public class Appartement {
     }
 
     @Override
+    public Appartement clone(){
+        Appartement copy = new Appartement();
+        copy.id = this.id;
+        copy.Nom = this.Nom;
+        copy.adresse = this.adresse;
+        copy.images = this.images;
+        copy.nbChambres = this.nbChambres;
+        copy.prixLocation = this.prixLocation;
+        copy.superficie = this.superficie;
+
+        return copy;
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -108,7 +130,12 @@ public class Appartement {
                 new ImageIcon("chemin/vers/image2.jpg")
         };
 
-        Appartement app1 = new Appartement(1,"Duplex", imagesPourApp1, "123 Rue de Paris", 75.0, 2, 1200.0);
+        Appartement app1 = null;
+        try {
+            app1 = new Appartement("Duplex", imagesPourApp1, "123 Rue de Paris", 100, 2, 1200.0);
+        } catch (AppartementException e) {
+            throw new RuntimeException(e);
+        }
 
         System.out.println(app1);
     }

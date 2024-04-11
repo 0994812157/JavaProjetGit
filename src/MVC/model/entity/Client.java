@@ -14,7 +14,7 @@ public class Client extends Personne {
         this.NumTel = "04/";
     }
 
-    public Client(String nom, String prenom, LocalDate ddn, String gsm) {
+    public Client(String nom, String prenom, LocalDate ddn, String gsm) throws PersonneException {
         super(nom, prenom, ddn);
         this.NClient = ++NumClient;
         this.NumTel = gsm;
@@ -50,8 +50,13 @@ public class Client extends Personne {
     }
 
     public static void main(String[] args) {
-        Client client = new Client("Doe", "John", LocalDate.of(1985, 5, 15),"0478459632");
-        client.setNumTel("0123456789");
+        Client client = null;
+        try {
+            client = new Client("Doe", "line", LocalDate.of(1985, 5, 15),"0478459632");
+        } catch (PersonneException e) {
+            throw new RuntimeException(e);
+        }
+        //client.setNumTel("0123456789");
         System.out.println(client);
     }
 }

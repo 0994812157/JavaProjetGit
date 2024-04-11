@@ -17,7 +17,7 @@ public class Employe extends Personne {
         this.mdp = "";
     }
 
-    public Employe(String nom, String prenom, LocalDate ddn, int matricule, String fonction, String mdp) {
+    public Employe(String nom, String prenom, LocalDate ddn, int matricule, String fonction, String mdp) throws PersonneException {
         super(nom, prenom, ddn);
         this.matricule = matricule;
         this.fonction = fonction;
@@ -74,7 +74,12 @@ public class Employe extends Personne {
     }
 
     public static void main(String[] args) {
-        Employe employe = new Employe("Doe", "John", LocalDate.of(1980, 4, 15), 12345, "EMPLOYE", "password123");
+        Employe employe = null;
+        try {
+            employe = new Employe("Doe", "John", LocalDate.of(1980, 4, 15), 12345, "EMPLOYE", "password123");
+        } catch (PersonneException e) {
+            throw new RuntimeException(e);
+        }
         System.out.println(employe);
     }
 }
