@@ -1,4 +1,4 @@
-package hepl.java.MVC.view.Gui;
+package MVC.view.Gui;
 
 import javax.swing.*;
 
