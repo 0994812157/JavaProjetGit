@@ -20,6 +20,14 @@ public class Client extends Personne {
         this.NumTel = gsm;
     }
 
+    public int getNClient(){
+        return NClient;
+    }
+
+    public void setNClient(int NClient) {
+        this.NClient = NClient;
+    }
+
     public String getNumTel() {
         return NumTel;
     }
@@ -37,16 +45,25 @@ public class Client extends Personne {
     }
 
     @Override
-    public int getNumero() {
-        return NumClient;
-    }
-    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Client)) return false;
         if (!super.equals(o)) return false; // Compare également les attributs hérités de Personne
         Client client = (Client) o;
-        return NumClient == client.NumClient && Objects.equals(NumTel, client.NumTel);
+        return NClient == client.NClient && Objects.equals(NumTel, client.NumTel);
+    }
+
+
+
+    public Client clone(){
+        Client copy = new Client();
+        copy.NClient = this.getNClient();
+        copy.setNom(this.getNom());
+        copy.setPrenom(this.getPrenom());
+        copy.setDateNaissance(this.getDateNaissance());
+        copy.setNumTel(this.getNumTel());
+
+        return copy;
     }
 
     public static void main(String[] args) {
