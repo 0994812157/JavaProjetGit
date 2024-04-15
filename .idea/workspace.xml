@@ -5,21 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6102baac-c2d9-496a-bebd-d3f18fb61273" name="Changes" comment="ajout package MVC2">
-      <change afterPath="$PROJECT_DIR$/src/MVC/model/entity/AppartementException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/model/entity/PersonneException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogconnexion.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogconnexion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/classe/border.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MVC/model/entity/Appartement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/model/entity/Appartement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MVC/model/entity/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/model/entity/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MVC/model/entity/Employe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/model/entity/Employe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MVC/model/entity/Personne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/model/entity/Personne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogConnexion.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogConnexion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogNouveauEmploye.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogNouveauEmploye.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogNouvelAppart.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogNouvelAppart.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MVC/view/Gui/JFrameFenetreFinal.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JFrameFenetreFinal.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MVC/view/Gui/JFrameReservation.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JFrameReservation.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MVC/view/Gui/JFrameReservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JFrameReservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MVC/view/Gui/JdialogNouveauClient.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JdialogNouveauClient.form" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +25,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -56,6 +51,7 @@
     "Application.JDialogNewClient.executor": "Run",
     "Application.JDialogNouveauEmploye.executor": "Run",
     "Application.JDialogNouvelAppart.executor": "Run",
+    "Application.JDialogconnexion.executor": "Run",
     "Application.JFrameFenetreFinal.executor": "Run",
     "Application.JFrameReservation.executor": "Run",
     "Application.JdialogNouveauClient.executor": "Run",
@@ -69,9 +65,9 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "110",
     "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "229",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "stanela",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/JAVA/GestionProjetJava/src/MVC",
+    "last_opened_file_path": "C:/Users/fogan/OneDrive/Bureau/hepl 2/java/JavaProjetGit/src/MVC/view/Gui",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -83,16 +79,25 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\fogan\OneDrive\Bureau\hepl 2\java\JavaProjetGit\src\MVC\view\Gui" />
+      <recent name="C:\Users\fogan\OneDrive\Bureau\hepl 2\java\JavaProjetGit\src\MVC\view\Gui\images" />
       <recent name="D:\JAVA\GestionProjetJava\src\MVC" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\fogan\OneDrive\Bureau\hepl 2\java\JavaProjetGit\src\MVC\view\Gui" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="MVC.view.Gui" />
+      <recent name="MVC.view.Gui.classe" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.MVC.model.entity.Client">
-    <configuration name="Appartement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MVC.model.entity.Appartement" />
+  <component name="RunManager" selected="Application.JFrameFenetreFinal">
+    <configuration name="JDialogNouveauEmploye" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MVC.view.Gui.JDialogNouveauEmploye" />
       <module name="GestionProjetJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="MVC.model.entity.*" />
+          <option name="PATTERN" value="MVC.view.Gui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,12 +105,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Employe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hepl.java.MVC.model.entity.Employe" />
+    <configuration name="JDialogNouvelAppart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MVC.view.Gui.JDialogNouvelAppart" />
       <module name="GestionProjetJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hepl.java.MVC.model.entity.*" />
+          <option name="PATTERN" value="MVC.view.Gui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,12 +118,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MVC.model.entity.Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MVC.model.entity.Client" />
+    <configuration name="JDialogconnexion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MVC.view.Gui.JDialogconnexion" />
       <module name="GestionProjetJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="MVC.model.entity.*" />
+          <option name="PATTERN" value="MVC.view.Gui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,12 +131,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MVC.model.entity.Employe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MVC.model.entity.Employe" />
+    <configuration name="JFrameFenetreFinal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MVC.view.Gui.JFrameFenetreFinal" />
       <module name="GestionProjetJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="MVC.model.entity.*" />
+          <option name="PATTERN" value="MVC.view.Gui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,12 +144,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Personne" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MVC.model.entity.Personne" />
+    <configuration name="JFrameReservation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MVC.view.Gui.JFrameReservation" />
       <module name="GestionProjetJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="MVC.model.entity.*" />
+          <option name="PATTERN" value="MVC.view.Gui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -154,17 +159,18 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MVC.model.entity.Client" />
-        <item itemvalue="Application.MVC.model.entity.Employe" />
-        <item itemvalue="Application.Personne" />
-        <item itemvalue="Application.Appartement" />
-        <item itemvalue="Application.Employe" />
+        <item itemvalue="Application.JFrameFenetreFinal" />
+        <item itemvalue="Application.JFrameReservation" />
+        <item itemvalue="Application.JDialogNouvelAppart" />
+        <item itemvalue="Application.JDialogNouveauEmploye" />
+        <item itemvalue="Application.JDialogconnexion" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
         <option value="jdk-22-openjdk-22-4caba194b151-f504ca98" />
       </set>
     </attachedChunks>
@@ -184,6 +190,7 @@
       <workItem from="1712078855309" duration="11180000" />
       <workItem from="1712219675115" duration="7260000" />
       <workItem from="1712824690703" duration="5698000" />
+      <workItem from="1713167846562" duration="3850000" />
     </task>
     <task id="LOCAL-00001" summary="class vide">
       <option name="closed" value="true" />
