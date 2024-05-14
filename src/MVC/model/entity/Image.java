@@ -4,6 +4,11 @@ public class Image {
     private String chemin;
     private String titre;
 
+    public Image()
+    {
+        this.chemin = "null";
+        this.titre = "null";
+    }
     // Constructeur
     public Image(String chemin, String titre) {
         this.chemin = chemin;

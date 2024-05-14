@@ -10,6 +10,15 @@ public class Employe extends Personne {
     public static String ADMINISTRATEUR = "ADMINISTRATEUR";
     public static String EMPLOYE = "EMPLOYE";
 
+    /*
+    private int generateMatricule(String nom, LocalDate ddn) {
+        // Prendre les deux premières lettres du nom
+        String prefix = nom.length() > 1 ? nom.substring(0, 2).toUpperCase() : nom.toUpperCase();
+        // Convertir la date de naissance en chaîne de caractères
+        String dateString = ddn.toString().replace("-", "");
+        // Concaténer et retourner le résultat
+        return Integer.parseInt(prefix + dateString);
+    }*/
     public Employe() {
         super();
         this.matricule = -1;
@@ -71,6 +80,18 @@ public class Employe extends Personne {
         if (!super.equals(o)) return false;
         Employe employe = (Employe) o;
         return matricule == employe.matricule;
+    }
+
+    public Employe clone(){
+        Employe copy = new Employe();
+        copy.matricule = this.getMatricule();
+        copy.setNom(this.getNom());
+        copy.setPrenom(this.getPrenom());
+        copy.setDateNaissance(this.getDateNaissance());
+        copy.setFonction(this.getFonction());
+        copy.setMdp(this.getMdp());
+
+        return copy;
     }
 
     public static void main(String[] args) {

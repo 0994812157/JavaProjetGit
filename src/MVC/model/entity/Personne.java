@@ -22,9 +22,12 @@ public class Personne implements EstIdentifiable {
     public void setNom(String nom) {
         Nom = nom;
     }
-
-    public LocalDate getDateNaissance() {
+    public LocalDate getDateNaissance(){
         return dateNaissance;
+    }
+
+    public void setDateNaissance(LocalDate dateNaissance) {
+        this.dateNaissance = dateNaissance;
     }
 
     public Personne() {

@@ -1,12 +1,13 @@
 package MVC.model.entity;
 
 import javax.swing.*;
+import java.util.ArrayList;
 
 public class Appartement {
     private int id;
     private static int idAppart = 0;
     private String Nom;
-    private ImageIcon[] images;
+    private ArrayList<Image> images;
     private String adresse;
     private double superficie;
     private int nbChambres;
@@ -16,7 +17,7 @@ public class Appartement {
         id = ++idAppart;
     }
 
-   public Appartement(String nom, ImageIcon[] images, String adresse, double superficie, int nbChambres, double prixLocation) throws AppartementException
+   public Appartement(String nom, ArrayList<Image> images, String adresse, double superficie, int nbChambres, double prixLocation) throws AppartementException
    {
         this.id = ++idAppart;
         if (nom.length() <5) throw new AppartementException("Le nom ne peut être inférieur à 5 caractères!");
@@ -48,11 +49,11 @@ public class Appartement {
         Nom = nom;
     }
 
-    public ImageIcon[] getImages() {
+    public ArrayList<Image> getImages() {
         return images;
     }
 
-    public void setImages(ImageIcon[] images) {
+    public void setImages(ArrayList<Image> images) {
         this.images = images;
     }
 
@@ -93,7 +94,7 @@ public class Appartement {
         return "Appartement{" +
                 "id=" + id +
                 ", nom=" + Nom +
-                ", images=" + (images != null ? images.length : 0) + " image(s)" +
+                ", images=" + (images != null ? images.toString() : 0) + " image(s)" +
                 ", adresse='" + adresse + '\'' +
                 ", superficie=" + superficie +
                 ", nbChambres=" + nbChambres +
@@ -125,10 +126,10 @@ public class Appartement {
 
     public static void main(String[] args) {
         // Création d'un tableau d'images pour l'exemple (les images doivent exister)
-        ImageIcon[] imagesPourApp1 = {
-                new ImageIcon("chemin/vers/image1.jpg"),
-                new ImageIcon("chemin/vers/image2.jpg")
-        };
+        ArrayList<Image> imagesPourApp1 = new ArrayList<Image>();
+        imagesPourApp1.add(new Image("chemin/vers/image1.jpg","bateau"));
+        imagesPourApp1.add(new Image("chemin/vers/image2.jpg","cabane"));
+
 
         Appartement app1 = null;
         try {
