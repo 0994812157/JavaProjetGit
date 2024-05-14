@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6102baac-c2d9-496a-bebd-d3f18fb61273" name="Changes" comment="ajout du Controlleur et view">
-      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogConnexion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogmessage.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestionProjetJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/GestionProjetJava.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogNouveauEmploye.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogNouveauEmploye.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogNouvelAppart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogNouvelAppart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogconnexion.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogconnexion.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogconnexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogmessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MVC/view/Gui/JFrameFenetreFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JFrameFenetreFinal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MVC/view/Gui/JdialogNouveauClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JdialogNouveauClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MVC/view/Gui/classe/border.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/view/Gui/classe/border.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +87,7 @@
       <recent name="D:\JAVA\GestionProjetJava\src\MVC" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JDialogNouvelAppart">
+  <component name="RunManager" selected="Application.JFrameFenetreFinal">
     <configuration name="JDialogNouvelAppart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MVC.view.Gui.JDialogNouvelAppart" />
       <module name="GestionProjetJava" />
@@ -268,7 +258,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713199033351</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="ajout du Controlleur et view">
+      <option name="closed" value="true" />
+      <created>1715714910323</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1715714910323</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
