@@ -1,10 +1,6 @@
 package MVC.view.Gui;
 
-import MVC.controller.Controlleur;
-import MVC.view.ViewItems;
-
 import javax.swing.*;
-import java.util.ArrayList;
 
 public class JFrameFenetreFinal extends JFrame {
     private JPanel MainPanel;
