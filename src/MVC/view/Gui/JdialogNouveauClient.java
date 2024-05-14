@@ -18,33 +18,42 @@ public class JdialogNouveauClient extends JDialog {
     private String gsm;
 
     public JdialogNouveauClient() {
-        setContentPane(contentPane);
-        setModal(true);
-        getRootPane().setDefaultButton(buttonCreer);
-        setTitle("----| Nouveau Client |----");
 
-        buttonCreer.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                nom = textFieldNom.getText();
-                prenom = textFieldPrenom.getText();
-                gsm = textFieldGSM.getText();
-                setVisible(false); // Assumant que vous souhaitez fermer ce dialogue après création.
-            }
-        });
+        JDialogConnexion formconnection=new JDialogConnexion();
+        if(!formconnection.getconnecte()){
+            formconnection.pack();
+            formconnection.setVisible(true);
+            formconnection.setConnecte(true);
+        }
+        if(formconnection.getconnecte()) {
+            setContentPane(contentPane);
+            setModal(true);
+            getRootPane().setDefaultButton(buttonCreer);
+            setTitle("----| Nouveau Client |----");
 
-        buttonAnnuler.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                setVisible(false);
-            }
-        });
+            buttonCreer.addActionListener(new ActionListener() {
+                public void actionPerformed(ActionEvent e) {
+                    nom = textFieldNom.getText();
+                    prenom = textFieldPrenom.getText();
+                    gsm = textFieldGSM.getText();
+                    setVisible(false); // Assumant que vous souhaitez fermer ce dialogue après création.
+                }
+            });
 
-        // Gérer la fermeture de la fenêtre via la croix
-        setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
-        addWindowListener(new WindowAdapter() {
-            public void windowClosing(WindowEvent e) {
-                onCancel();
-            }
-        });
+            buttonAnnuler.addActionListener(new ActionListener() {
+                public void actionPerformed(ActionEvent e) {
+                    setVisible(false);
+                }
+            });
+
+            // Gérer la fermeture de la fenêtre via la croix
+            setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
+            addWindowListener(new WindowAdapter() {
+                public void windowClosing(WindowEvent e) {
+                    onCancel();
+                }
+            });
+        }
     }
 
     private void onCancel() {

@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6102baac-c2d9-496a-bebd-d3f18fb61273" name="Changes" comment="ajout du Controlleur et view">
+
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_04_2024_14_57__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_04_2024_14_57__Changes_.xml" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,8 +91,10 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.JFrameFenetreFinal">
+
     <configuration name="Appartement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MVC.model.entity.Appartement" />
+
       <module name="GestionProjetJava" />
       <extension name="coverage">
         <pattern>
@@ -115,8 +119,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+
     <configuration name="JFrameFenetreFinal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MVC.view.Gui.JFrameFenetreFinal" />
+
       <module name="GestionProjetJava" />
       <extension name="coverage">
         <pattern>
@@ -141,8 +147,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
+
       <module name="GestionProjetJava" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -294,5 +302,6 @@
     <MESSAGE value="Merge pull request #1 from 0994812157/stanela&#10;&#10;ajout package MVC2" />
     <MESSAGE value="ajout du Controlleur et view" />
     <option name="LAST_COMMIT_MESSAGE" value="ajout du Controlleur et view" />
+
   </component>
 </project>
