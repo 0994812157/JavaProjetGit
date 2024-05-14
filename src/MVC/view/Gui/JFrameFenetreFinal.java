@@ -1,7 +1,12 @@
 package MVC.view.Gui;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.*;
 
+import com.formdev.flatlaf.FlatDarkLaf;
+import com.formdev.flatlaf.IntelliJTheme;
 public class JFrameFenetreFinal extends JFrame {
     private JPanel MainPanel;
     private JPanel JpanelPhoto;
@@ -41,35 +46,81 @@ public class JFrameFenetreFinal extends JFrame {
 
     public JFrameFenetreFinal()
     {
+        //FlatDarkLaf.setup();
+        JDialogConnexion formconnection=new JDialogConnexion();
+        if(!formconnection.getconnecte()){
+            formconnection.pack();
+            formconnection.setVisible(true);
+        }
+        if(formconnection.getconnecte()) {
 
-        add(MainPanel);
-        setTitle("my first");
-        setSize(1200,600);
-        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        setVisible(true);
+            add(MainPanel);
+            setTitle("my first");
+            setSize(1200, 600);
+            setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+            setVisible(true);
 
-        JMenuBar Jmenubar = new JMenuBar();
-        JMenu connexion = new JMenu("Connexion");
-        Jmenubar.add(connexion);
+            JMenuBar Jmenubar = new JMenuBar();
+            JMenu connexion = new JMenu("Deconnexion");
+            Jmenubar.add(connexion);
 
-        JMenu addNewPersonne = new JMenu("Personne");
-        Jmenubar.add(addNewPersonne);
-        Cli = new JMenuItem("Ajouter Client");
-        Emp = new JMenuItem("Ajouter Employé");
-        addNewPersonne.add(Cli);
-        addNewPersonne.add(Emp);
+            JMenu addNewPersonne = new JMenu("Personne");
+            Jmenubar.add(addNewPersonne);
+            Cli = new JMenuItem("Ajouter Client");
+            Emp = new JMenuItem("Ajouter Employé");
+            addNewPersonne.add(Cli);
+            addNewPersonne.add(Emp);
 
-        JMenu addNewAppart = new JMenu("appartement");
-        Jmenubar.add(addNewAppart);
+            JMenu addNewAppart = new JMenu("appartement");
+            Jmenubar.add(addNewAppart);
 
+            setJMenuBar(Jmenubar);
+            Cli.addActionListener(new ActionListener() {
+                public void actionPerformed(ActionEvent e) {
+                    JdialogNouveauClient fenetrecli=new JdialogNouveauClient();
+                    fenetrecli.pack();
+                    fenetrecli.setVisible(true);
+                    fenetrecli.dispose();
+                }
+            });
+            Emp.addActionListener(new ActionListener() {
+                public void actionPerformed(ActionEvent e) {
+                    JDialogNouveauEmploye fenetreemp=new JDialogNouveauEmploye();
+                    fenetreemp.pack();
+                    fenetreemp.setVisible(true);
+                    fenetreemp.dispose();
+                }
+            });
 
-        setJMenuBar(Jmenubar);
+            addNewAppart.addMouseListener(new MouseAdapter() {
+                public void mouseClicked(MouseEvent e) {
+                    JDialogNouvelAppart fenetreappart=new JDialogNouvelAppart();
+                    fenetreappart.pack();
+                    fenetreappart.setVisible(true);
+                    fenetreappart.dispose();
+                }
+            });
+            connexion.addMouseListener(new MouseAdapter() {
+                public void mouseClicked(MouseEvent e) {
+                    JDialogmessage fenetrem=new JDialogmessage("Au revoir !");
+                    fenetrem.pack();
+                    fenetrem.setVisible(true);
+                    fenetrem.dispose();
+                    System.exit(0);
+                }
+            });
+
+        }
+        else{
+            System.exit(0);
+        }
     }
 
     public static void main(String[] args)
     {
         JFrameFenetreFinal monPanel = new JFrameFenetreFinal();
         monPanel.setVisible(true);
+        //System.exit(0);
     }
 
 }

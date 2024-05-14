@@ -4,12 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6102baac-c2d9-496a-bebd-d3f18fb61273" name="Changes" comment="ajout package MVC2">
-      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogconnexion.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogconnexion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/classe/border.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="6102baac-c2d9-496a-bebd-d3f18fb61273" name="Changes" comment="ajout du Controlleur et view">
+      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogConnexion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogmessage.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GestionProjetJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/GestionProjetJava.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogNouveauEmploye.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogNouveauEmploye.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogNouvelAppart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogNouvelAppart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogconnexion.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogconnexion.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogconnexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JDialogmessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MVC/view/Gui/JFrameFenetreFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JFrameFenetreFinal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MVC/view/Gui/JdialogNouveauClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JdialogNouveauClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MVC/view/Gui/classe/border.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/view/Gui/classe/border.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +31,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="main" />
@@ -45,18 +57,21 @@
   "keyToString": {
     "Application.Appartement.executor": "Run",
     "Application.Client.executor": "Run",
+    "Application.DAOAppartements.executor": "Run",
+    "Application.DAOClients.executor": "Run",
+    "Application.DAOEmployes.executor": "Run",
     "Application.Employe.executor": "Run",
     "Application.JDialogAppart.executor": "Run",
     "Application.JDialogConnexion.executor": "Run",
     "Application.JDialogNewClient.executor": "Run",
     "Application.JDialogNouveauEmploye.executor": "Run",
     "Application.JDialogNouvelAppart.executor": "Run",
-    "Application.JDialogconnexion.executor": "Run",
     "Application.JFrameFenetreFinal.executor": "Run",
     "Application.JFrameReservation.executor": "Run",
     "Application.JdialogNouveauClient.executor": "Run",
     "Application.MVC.model.entity.Client.executor": "Run",
     "Application.MVC.model.entity.Employe.executor": "Run",
+    "Application.Main.executor": "Run",
     "Application.Option.executor": "Run",
     "Application.Personne.executor": "Run",
     "Application.Reservation.executor": "Run",
@@ -67,7 +82,7 @@
     "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "229",
     "git-widget-placeholder": "stanela",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/fogan/OneDrive/Bureau/hepl 2/java/JavaProjetGit/src/MVC/view/Gui",
+    "last_opened_file_path": "D:/JAVA/GestionProjetJava/src/MVC",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -79,32 +94,10 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\fogan\OneDrive\Bureau\hepl 2\java\JavaProjetGit\src\MVC\view\Gui" />
-      <recent name="C:\Users\fogan\OneDrive\Bureau\hepl 2\java\JavaProjetGit\src\MVC\view\Gui\images" />
       <recent name="D:\JAVA\GestionProjetJava\src\MVC" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\fogan\OneDrive\Bureau\hepl 2\java\JavaProjetGit\src\MVC\view\Gui" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="MVC.view.Gui" />
-      <recent name="MVC.view.Gui.classe" />
-    </key>
   </component>
-  <component name="RunManager" selected="Application.JFrameFenetreFinal">
-    <configuration name="JDialogNouveauEmploye" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MVC.view.Gui.JDialogNouveauEmploye" />
-      <module name="GestionProjetJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="MVC.view.Gui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.JDialogNouvelAppart">
     <configuration name="JDialogNouvelAppart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MVC.view.Gui.JDialogNouvelAppart" />
       <module name="GestionProjetJava" />
@@ -131,6 +124,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JDialogmessage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MVC.view.Gui.JDialogmessage" />
+      <module name="GestionProjetJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MVC.view.Gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JFrameFenetreFinal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MVC.view.Gui.JFrameFenetreFinal" />
       <module name="GestionProjetJava" />
@@ -144,8 +150,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JFrameReservation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MVC.view.Gui.JFrameReservation" />
+    <configuration name="JdialogNouveauClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MVC.view.Gui.JdialogNouveauClient" />
       <module name="GestionProjetJava" />
       <extension name="coverage">
         <pattern>
@@ -160,9 +166,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.JFrameFenetreFinal" />
-        <item itemvalue="Application.JFrameReservation" />
         <item itemvalue="Application.JDialogNouvelAppart" />
-        <item itemvalue="Application.JDialogNouveauEmploye" />
+        <item itemvalue="Application.JdialogNouveauClient" />
+        <item itemvalue="Application.JDialogmessage" />
         <item itemvalue="Application.JDialogconnexion" />
       </list>
     </recent_temporary>
@@ -170,7 +176,6 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
         <option value="jdk-22-openjdk-22-4caba194b151-f504ca98" />
       </set>
     </attachedChunks>
@@ -190,7 +195,6 @@
       <workItem from="1712078855309" duration="11180000" />
       <workItem from="1712219675115" duration="7260000" />
       <workItem from="1712824690703" duration="5698000" />
-      <workItem from="1713167846562" duration="3850000" />
     </task>
     <task id="LOCAL-00001" summary="class vide">
       <option name="closed" value="true" />
@@ -256,7 +260,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712825394869</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="ajout du Controlleur et view">
+      <option name="closed" value="true" />
+      <created>1713199033351</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1713199033351</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,6 +283,23 @@
     <MESSAGE value="on est pret pour la 1er Eval" />
     <MESSAGE value="ajout package MVC" />
     <MESSAGE value="ajout package MVC2" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout package MVC2" />
+    <MESSAGE value="Merge pull request #1 from 0994812157/stanela&#10;&#10;ajout package MVC2" />
+    <MESSAGE value="ajout du Controlleur et view" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout du Controlleur et view" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/MVC/view/Gui/JdialogNouveauClient.java</url>
+          <line>63</line>
+          <properties class="MVC.view.Gui.JdialogNouveauClient" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

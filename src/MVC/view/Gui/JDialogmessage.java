@@ -3,22 +3,26 @@ package MVC.view.Gui;
 import javax.swing.*;
 import java.awt.event.*;
 
-public class JDialogconnexion extends JDialog {
+public class JDialogmessage extends JDialog {
     private JPanel contentPane;
-    private JTextField textField1;
-    private JTextField textField2;
-    private JButton connexionButton;
     private JButton buttonOK;
     private JButton buttonCancel;
+    private JLabel texteLabel;
 
-    public JDialogconnexion() {
+    public JDialogmessage(String a) {
         setContentPane(contentPane);
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
-        setTitle("---- | formulaire de connexion |----");
-        connexionButton.addActionListener(new ActionListener() {
+        texteLabel.setText(a);
+        buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 onOK();
+            }
+        });
+
+        buttonCancel.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                onCancel();
             }
         });
 
@@ -49,9 +53,11 @@ public class JDialogconnexion extends JDialog {
     }
 
     public static void main(String[] args) {
-        JDialogconnexion dialog = new JDialogconnexion();
+        JDialogmessage dialog = new JDialogmessage("bonjour");
         dialog.pack();
         dialog.setVisible(true);
         System.exit(0);
     }
+
+
 }
