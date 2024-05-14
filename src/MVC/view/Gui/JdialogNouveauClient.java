@@ -1,9 +1,15 @@
 package MVC.view.Gui;
 
+import MVC.controller.Controlleur;
+import MVC.model.entity.Client;
+import MVC.view.ViewClient;
+import MVC.view.ViewItems;
+
 import javax.swing.*;
 import java.awt.event.*;
+import java.util.ArrayList;
 
-public class JdialogNouveauClient extends JDialog {
+public class JdialogNouveauClient extends JDialog implements ViewClient {
     private JPanel contentPane;
     private JButton buttonCreer;
     private JButton buttonAnnuler;
@@ -52,6 +58,13 @@ public class JdialogNouveauClient extends JDialog {
         setVisible(false);
     }
 
+    public Object promptForNewItem()
+    {
+        JdialogNouveauClient jdialogNouveauClient;
+        jdialogNouveauClient = new JdialogNouveauClient(this,null);
+
+    }
+
     public static void main(String[] args) {
         JdialogNouveauClient dialog = new JdialogNouveauClient();
         dialog.pack();
@@ -69,5 +82,46 @@ public class JdialogNouveauClient extends JDialog {
 
     public String getGSM() {
         return gsm;
+    }
+//----------------------------------------------------------------
+    @Override
+    public Client promptForNewClient() {
+        return null;
+
+    }
+
+    @Override
+    public Client promptForUpdateClient(Client client) {
+        return null;
+    }
+
+    @Override
+    public Integer promptForClientById() {
+        return null;
+    }
+
+    @Override
+    public void showErroMessage(String message) {
+
+    }
+
+    @Override
+    public void showMessage(String message) {
+
+    }
+
+    @Override
+    public void displayListClient(ArrayList<Client> clients) {
+
+    }
+
+    @Override
+    public void run() {
+
+    }
+
+    @Override
+    public void setController(Controlleur c) {
+
     }
 }

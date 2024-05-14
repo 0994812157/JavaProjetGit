@@ -33,6 +33,7 @@ public class Reservation {
     }
 
     // Getters et Setters
+
     public int getNumReservation() {
         return numReservation;
     }
@@ -100,11 +101,25 @@ public class Reservation {
                 ", Nombre de personne =" + nbPersonne +
                 ", Nombre de nuit =" + nbNuits +
                 ", Date de debut =" + dateDebut +
-                ", Options =" + tabOption +
-                ", Client =" + client +
-                ", Employe =" + employe +
-                ", Appartement =" + appart +
+                ", Options =" + tabOption.toString() +
+                ", Client =" + client.toString() +
+                ", Employe =" + employe.toString() +
+                ", Appartement =" + appart.toString() +
                 '}';
+    }
+
+    public Reservation clone(){
+        Reservation copy = new Reservation();
+        copy.numReservation = this.getNumReservation();
+        copy.setNbPersonne(this.getNbPersonne());
+        copy.setNbNuits(this.getNbNuits());
+        copy.setDateDebut(this.getDateDebut());
+        copy.setTabOption(this.getTabOption());
+        copy.setClient(this.getClient());
+        copy.setEmploye(this.getEmploye());
+        copy.setAppart(this.getAppart());
+
+        return copy;
     }
 
     // Méthode main pour tester

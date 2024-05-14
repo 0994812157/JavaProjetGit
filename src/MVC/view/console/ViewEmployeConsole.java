@@ -1,13 +1,7 @@
 package MVC.view.console;
 
 import MVC.controller.Controlleur;
-import MVC.model.entity.Appartement;
-import MVC.model.entity.AppartementException;
-import MVC.model.entity.Employe;
-import MVC.model.entity.Image;
-import MVC.view.viewItem;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Scanner;
 

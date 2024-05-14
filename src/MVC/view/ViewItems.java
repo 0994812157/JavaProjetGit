@@ -1,9 +1,11 @@
 package MVC.view;
 
 import MVC.controller.Controlleur;
+import MVC.model.entity.Appartement;
+
 import java.util.ArrayList;
 
-public interface viewItem {
+public interface ViewItems {
     Object promptForNewItem();
     Object promptForUpdateItem(Object item);
     Integer promptForItemById();

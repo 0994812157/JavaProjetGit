@@ -1,7 +1,6 @@
 package MVC.model.DAO;
 
 import MVC.model.DataAccesLayer;
-import MVC.model.entity.Appartement;
 import MVC.model.entity.Client;
 import MVC.model.entity.Employe;
 import MVC.model.entity.PersonneException;
@@ -76,7 +75,7 @@ public class DAOEmployes implements DataAccesLayer {
 
     @Override
     public String toString() {
-        return "DAOClients{" +
+        return "DAOEmploye{" +
                 "employe=" + employes +
                 '}';
     }
@@ -86,9 +85,9 @@ public class DAOEmployes implements DataAccesLayer {
         DataAccesLayer dao = new DAOEmployes();
         try {
             dao.addItem(new Employe());
-            dao.addItem(new Employe("appart1","ffgtd", LocalDate.of(1998,2,17),508,"fonction1","mdp"));
+            dao.addItem(new Employe("pierre","ffgtd", LocalDate.of(1998,2,17),508,"fonction1","mdp"));
             dao.addItem(new Employe("cerises","ihhffgcvxd",LocalDate.of(2002,7,31),040,"f2","xxx"));
-            dao.addItem(new Client());
+            dao.addItem(new Employe());
             System.out.println(dao);
             Employe a = (Employe) dao.getItemById(1);
             System.out.println("Employe ayant l'id 1 = " + a);
