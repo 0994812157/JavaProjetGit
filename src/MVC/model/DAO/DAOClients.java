@@ -1,10 +1,7 @@
 package MVC.model.DAO;
 
 import MVC.model.DataAccesLayer;
-import MVC.model.entity.Appartement;
-import MVC.model.entity.AppartementException;
-import MVC.model.entity.Client;
-import MVC.model.entity.PersonneException;
+import MVC.model.entity.*;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

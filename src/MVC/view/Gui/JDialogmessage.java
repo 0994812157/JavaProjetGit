@@ -16,6 +16,7 @@ public class JDialogmessage extends JDialog {
         texteLabel.setText(a);
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
+                System.out.println("Hello world!");
                 onOK();
             }
         });
