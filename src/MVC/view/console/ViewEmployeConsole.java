@@ -1,17 +1,12 @@
 package MVC.view.console;
 
 import MVC.controller.Controlleur;
-import MVC.model.entity.Appartement;
-import MVC.model.entity.AppartementException;
-import MVC.model.entity.Employe;
-import MVC.model.entity.Image;
-import MVC.view.viewItem;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class ViewEmployeConsole implements viewItem {
+public class ViewEmployeConsole //implements viewItem
+{
     private Controlleur controlleur;
     private Scanner scanner;
 
@@ -19,7 +14,7 @@ public class ViewEmployeConsole implements viewItem {
     {
         scanner = new Scanner(System.in);
     }
-
+/*
     @Override
     public Object promptForNewItem() {
         /*
@@ -44,7 +39,7 @@ public class ViewEmployeConsole implements viewItem {
             System.out.println("Erreur : " + e.getMessage());
         } catch (NumberFormatException e) {
             System.out.println("Erreur : Saisie incorrecte !!!");
-        }*/
+        }
         return null;
     }
 
@@ -82,7 +77,7 @@ public class ViewEmployeConsole implements viewItem {
     public void setController(Controlleur c) {
 
     }
-
+*/
 
     private String promptConsoleForString() {
         return scanner.nextLine();

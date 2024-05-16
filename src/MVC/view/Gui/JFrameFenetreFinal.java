@@ -1,6 +1,7 @@
 package MVC.view.Gui;
 
 import javax.swing.*;
+
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumn;
 import java.awt.event.ActionEvent;
@@ -17,6 +18,7 @@ import MVC.view.Viewliste;
 import com.formdev.flatlaf.FlatDarkLaf;
 import com.formdev.flatlaf.IntelliJTheme;
 public class JFrameFenetreFinal extends JFrame implements Viewliste<Employe> {
+
     private JPanel MainPanel;
     private JPanel JpanelPhoto;
     private JComboBox comboBoxListAppart;
@@ -49,13 +51,18 @@ public class JFrameFenetreFinal extends JFrame implements Viewliste<Employe> {
     private JLabel LabelCapacite;
     private JLabel LabelPrix;
     private JLabel LabelAppart;
+
     private JTable table1;
     private JScrollBar scrollBar1;
+
+    private JPanel PhotoAppart;
+
 
     private JMenuItem Cli, Emp;
 
     public JFrameFenetreFinal()
     {
+
         //FlatDarkLaf.setup();
         JDialogConnexion formconnection=new JDialogConnexion();
         if(!formconnection.getconnecte()){
@@ -122,19 +129,56 @@ public class JFrameFenetreFinal extends JFrame implements Viewliste<Employe> {
                 }
             });
 
-        }
-        else{
-            System.exit(0);
+        add(MainPanel);
+        setTitle("my first");
+        setSize(1200,600);
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        setVisible(true);
+
+        JMenuBar Jmenubar = new JMenuBar();
+        JMenu connexion = new JMenu("Connexion");
+        Jmenubar.add(connexion);
+
+        JMenu addNewPersonne = new JMenu("Personne");
+        Jmenubar.add(addNewPersonne);
+        Cli = new JMenuItem("Ajouter Client");
+        Emp = new JMenuItem("Ajouter Employé");
+        addNewPersonne.add(Cli);
+        addNewPersonne.add(Emp);
+
+        JMenu addNewAppart = new JMenu("appartement");
+        Jmenubar.add(addNewAppart);
+
+
+        setJMenuBar(Jmenubar);
+        // Charger l'image et l'ajouter au panneau PhotoAppart
+        loadImage();
+    }
+    private void loadImage() {
+        // Utilisez getResource pour charger l'image depuis le classpath
+        String imagePath = "/MVC/view/Gui/images/Bateau1.jpg";
+        ImageIcon imageIcon = new ImageIcon(getClass().getResource(imagePath));
+
+        if (imageIcon.getIconWidth() == -1) {
+            System.out.println("L'image ne peut pas être chargée. Vérifiez le chemin de l'image.");
+        } else {
+            JLabel imageLabel = new JLabel(imageIcon);
+            PhotoAppart.setLayout(new BorderLayout());
+            PhotoAppart.add(imageLabel, BorderLayout.CENTER);
         }
     }
+
+
 
     public static void main(String[] args)
     {
         JFrameFenetreFinal monPanel = new JFrameFenetreFinal();
         monPanel.setVisible(true);
 
+
         //JListEmployes.add("dh","kn",1);
         //System.exit(0);
+
     }
 
 
