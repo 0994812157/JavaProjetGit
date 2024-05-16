@@ -66,13 +66,13 @@ public class JdialogNouveauClient extends JDialog implements ViewClient {
         // Mettez ici le code à exécuter lorsque l'utilisateur ferme le dialogue via la croix
         setVisible(false);
     }
-
+/*
     public Object promptForNewItem()
     {
         JdialogNouveauClient jdialogNouveauClient;
         jdialogNouveauClient = new JdialogNouveauClient(this,null);
 
-    }
+    }*/
 
     public static void main(String[] args) {
         JdialogNouveauClient dialog = new JdialogNouveauClient();

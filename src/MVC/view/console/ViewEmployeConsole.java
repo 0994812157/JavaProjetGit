@@ -5,7 +5,8 @@ import MVC.controller.Controlleur;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class ViewEmployeConsole implements viewItem {
+public class ViewEmployeConsole //implements viewItem
+{
     private Controlleur controlleur;
     private Scanner scanner;
 
@@ -13,7 +14,7 @@ public class ViewEmployeConsole implements viewItem {
     {
         scanner = new Scanner(System.in);
     }
-
+/*
     @Override
     public Object promptForNewItem() {
         /*
@@ -38,7 +39,7 @@ public class ViewEmployeConsole implements viewItem {
             System.out.println("Erreur : " + e.getMessage());
         } catch (NumberFormatException e) {
             System.out.println("Erreur : Saisie incorrecte !!!");
-        }*/
+        }
         return null;
     }
 
@@ -76,7 +77,7 @@ public class ViewEmployeConsole implements viewItem {
     public void setController(Controlleur c) {
 
     }
-
+*/
 
     private String promptConsoleForString() {
         return scanner.nextLine();

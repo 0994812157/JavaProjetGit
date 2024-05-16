@@ -1,5 +1,8 @@
 package MVC.model.entity;
 
+import MVC.model.DAO.DAO_Options;
+import MVC.model.DataAccesLayer;
+
 import java.util.Objects;
 
 public class Option implements EstIdentifiable {
@@ -10,7 +13,7 @@ public class Option implements EstIdentifiable {
     // Constructeur par défaut
     public Option() {
         this.code = 0;
-        this.type = "";
+        this.type = "option0";
         this.prix = 0.0f;
     }
 
@@ -65,21 +68,30 @@ public class Option implements EstIdentifiable {
         Option option = (Option) o;
         return Float.compare(option.prix, prix) == 0 && Objects.equals(type, option.type);
     }
+    public Option clone(){
+        Option copy = new Option();
+        copy.setCode(this.getCode());
+        copy.setType(this.getType());
+        copy.setPrix(this.getPrix());
 
+        return copy;
+    }
     public static void main(String[] args) {
-        Option option1 = new Option(125,"Assurance", 150.0f);
-        Option option2 = new Option(456,"GPS", 99.99f);
-        Option option3 = new Option(745,"Assurance", 150.0f);
-
-        System.out.println("Option 1: " + option1);
-        System.out.println("Option 2: " + option2);
-        System.out.println("Option 3: " + option3);
-
-        // Comparer option1 avec option2
-        System.out.println("Est-ce que option1 est égale à option2? " + option1.equals(option2));
-
-        // Comparer option1 avec option3
-        System.out.println("Est-ce que option1 est égale à option3? " + option1.equals(option3));
+        DataAccesLayer dao = new DAO_Options();
+        dao.addItem(new Option(0, "option0", 0.0f));
+        dao.addItem(new Option(8965, "chien", 153.3f));
+        dao.addItem(new Option(1234, "lit enfant", 88.65f));
+        dao.addItem(new Option(2, "option2", 0.0f));
+        System.out.println(dao);
+        Option a = (Option) dao.getItemById(1234);
+        System.out.println("Option ayant l'id 1234 = " + a);
+        if (a != null) {
+            a.setPrix(62.65f);
+            dao.updateItem(a);
+        }
+        System.out.println(dao);
+        dao.deleteItem(8965);
+        System.out.println(dao);
     }
 
 }

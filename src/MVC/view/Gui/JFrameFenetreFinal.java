@@ -2,6 +2,8 @@ package MVC.view.Gui;
 
 import javax.swing.*;
 
+import java.awt.*;
+
 public class JFrameFenetreFinal extends JFrame {
     private JPanel MainPanel;
     private JPanel JpanelPhoto;
@@ -36,6 +38,7 @@ public class JFrameFenetreFinal extends JFrame {
     private JLabel LabelCapacite;
     private JLabel LabelPrix;
     private JLabel LabelAppart;
+    private JPanel PhotoAppart;
 
     private JMenuItem Cli, Emp;
 
@@ -64,7 +67,24 @@ public class JFrameFenetreFinal extends JFrame {
 
 
         setJMenuBar(Jmenubar);
+        // Charger l'image et l'ajouter au panneau PhotoAppart
+        loadImage();
     }
+    private void loadImage() {
+        // Utilisez getResource pour charger l'image depuis le classpath
+        String imagePath = "/MVC/view/Gui/images/Bateau1.jpg";
+        ImageIcon imageIcon = new ImageIcon(getClass().getResource(imagePath));
+
+        if (imageIcon.getIconWidth() == -1) {
+            System.out.println("L'image ne peut pas être chargée. Vérifiez le chemin de l'image.");
+        } else {
+            JLabel imageLabel = new JLabel(imageIcon);
+            PhotoAppart.setLayout(new BorderLayout());
+            PhotoAppart.add(imageLabel, BorderLayout.CENTER);
+        }
+    }
+
+
 
     public static void main(String[] args)
     {

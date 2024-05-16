@@ -5,8 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6102baac-c2d9-496a-bebd-d3f18fb61273" name="Changes" comment="ajout du Controlleur et view">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_04_2024_14_57__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_04_2024_14_57__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MVC/model/DAO/DAO_Options.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_05_2024_10_59__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_05_2024_10_59__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_14_05_2024_20_23__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_14_05_2024_20_23__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_04_2024_19_01__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_04_2024_19_01__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_30_04_2024_19_07__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_30_04_2024_19_07__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_04_2024_14_57_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_04_2024_14_57__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MVC/model/entity/Option.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/model/entity/Option.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MVC/view/Gui/JFrameFenetreFinal.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JFrameFenetreFinal.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MVC/view/Gui/JFrameFenetreFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JFrameFenetreFinal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MVC/view/Gui/JdialogNouveauClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/view/Gui/JdialogNouveauClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MVC/view/console/ViewEmployeConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/view/console/ViewEmployeConsole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +63,7 @@
     "Application.DAOAppartements.executor": "Run",
     "Application.DAOClients.executor": "Run",
     "Application.DAOEmployes.executor": "Run",
+    "Application.DAO_Options.executor": "Run",
     "Application.Employe.executor": "Run",
     "Application.JDialogAppart.executor": "Run",
     "Application.JDialogConnexion.executor": "Run",
@@ -69,8 +82,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "110",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "229",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "308",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "168",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/JAVA/GestionProjetJava/src/MVC",
@@ -89,12 +102,12 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.JFrameFenetreFinal">
-    <configuration name="Appartement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MVC.model.entity.Appartement" />
+    <configuration name="DAOClients" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MVC.model.DAO.DAOClients" />
       <module name="GestionProjetJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="MVC.model.entity.*" />
+          <option name="PATTERN" value="MVC.model.DAO.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,12 +115,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JDialogconnexion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MVC.view.Gui.JDialogconnexion" />
+    <configuration name="DAO_Options" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MVC.model.DAO.DAO_Options" />
       <module name="GestionProjetJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="MVC.view.Gui.*" />
+          <option name="PATTERN" value="MVC.model.DAO.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,19 +141,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdialogNouveauClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MVC.view.Gui.JdialogNouveauClient" />
-      <module name="GestionProjetJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="MVC.view.Gui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="GestionProjetJava" />
@@ -148,13 +148,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Option" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MVC.model.entity.Option" />
+      <module name="GestionProjetJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MVC.model.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.JFrameFenetreFinal" />
-        <item itemvalue="Application.JdialogNouveauClient" />
-        <item itemvalue="Application.JDialogconnexion" />
-        <item itemvalue="Application.Appartement" />
+        <item itemvalue="Application.Option" />
+        <item itemvalue="Application.DAO_Options" />
+        <item itemvalue="Application.DAOClients" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -180,6 +193,7 @@
       <workItem from="1712078855309" duration="11180000" />
       <workItem from="1712219675115" duration="7260000" />
       <workItem from="1712824690703" duration="5698000" />
+      <workItem from="1715867621140" duration="11866000" />
     </task>
     <task id="LOCAL-00001" summary="class vide">
       <option name="closed" value="true" />
