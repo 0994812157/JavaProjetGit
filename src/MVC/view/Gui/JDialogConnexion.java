@@ -2,13 +2,13 @@ package MVC.view.Gui;
 
 import MVC.controller.*;
 import MVC.model.entity.Employe;
-import MVC.view.Viewitems;
+import MVC.view.*;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class JDialogConnexion extends JDialog implements Viewitems<Employe> {
+public class JDialogConnexion extends JDialog implements ViewItems{
     private JPanel contentPane;
     private JTextField textField1;
     private JPasswordField passwordField1;
@@ -67,8 +67,8 @@ public class JDialogConnexion extends JDialog implements Viewitems<Employe> {
 
     public static void main(String[] args) {
         JDialogConnexion dialog = new JDialogConnexion();
-       //JLabel titre = new JLabel("Connexion", SwingConstants.CENTER);
-       //dialog.add(titre, BorderLayout.NORTH);
+        //JLabel titre = new JLabel("Connexion", SwingConstants.CENTER);
+        //dialog.add(titre, BorderLayout.NORTH);
         //gestion_menu(dialog);
 
 
@@ -114,7 +114,7 @@ public class JDialogConnexion extends JDialog implements Viewitems<Employe> {
        // connexionButton.setBackground(new Color(28,105,207));
         //connexionButton.setBorder(new border(new Color(28,105,207),7));
     }*/
-    @Override
+
     public Employe getitems(){
         Employe employe=new Employe();
         employe.setNom(textField1.getText());

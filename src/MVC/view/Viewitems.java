@@ -1,11 +1,12 @@
 package MVC.view;
 
 import MVC.controller.*;
+import MVC.model.entity.Appartement;
 
 import java.util.ArrayList;
 
-public interface  Viewitems<T> {
-    T getitems();
+public interface ViewItems{
+
     void showErroMessage(String message);
     void showMessage(String message);
     void run();

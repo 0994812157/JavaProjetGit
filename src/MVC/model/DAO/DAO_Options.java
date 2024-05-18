@@ -5,27 +5,34 @@ import MVC.model.entity.Option;
 
 import java.util.ArrayList;
 
-public class DAO_Options implements DataAccesLayer {
+public class DAO_Options implements DataAccesLayer<Option>{
     private ArrayList<Option> options;
+    public Option dej =new Option(8965,"Petit dejeuner", 60);
+    public Option lie=new Option(1234,"Lit Enfant", 88);
+    public Option fu=new Option(1234,"Fumeur", 105);
+    public Option anni=new Option(1234,"Annimaux", 50);
 
     public DAO_Options() {
-        options = new ArrayList<>();
+        options = new ArrayList<Option>();
+        //options.add(new Option());
+
     }
 
-
     @Override
-    public int addItem(Object option) {
-        //return 0;
-        if (option instanceof Option) {
-            //((Option) option).setNClient(idcourant++);
-            options.add((Option) option);
-            return ((Option) option).getCode();
+    public int addItem(Option option) {
+        if(option!=null) {
+            if(options.contains(option)){
+                deleteItem(option);
+                return 0;
+            }
+            options.add(option);
+            return option.getCode();
         }
-        return -1;
+        return 0;
     }
 
     @Override
-    public boolean updateItem(Object option) {
+    public boolean updateItem(Option option) {
         if (option instanceof Option) {
             Option updateItem = (Option) option;
             for (int i = 0; i < options.size(); i++) {
@@ -45,29 +52,23 @@ public class DAO_Options implements DataAccesLayer {
     }
 
     @Override
-    public boolean deleteItem(Object appart) {
-        return options.remove(options);
+    public boolean deleteItem(Option option) {
+        return options.remove(option);
     }
 
     @Override
-    public Object getItemById(int id) {
-        for (Object a : options) {
-            if (a instanceof Option && ((Option) a).getCode() == id) {
-                return a;
+    public Option getItemById(int id) {
+        for (Option option : options) {
+            if (option.getCode() == id) {
+                return option;
             }
         }
         return null;
     }
 
     @Override
-    public ArrayList<Object> getList() {
-        ArrayList<Object> copy = new ArrayList<>();
-        for (Object a : options) {
-            if (a instanceof Option) {
-                copy.add(((Option)a).clone());
-            }
-        }
-        return copy;
+    public ArrayList<Option> getList() {
+        return new ArrayList<>(options);
     }
 
     @Override
@@ -75,6 +76,25 @@ public class DAO_Options implements DataAccesLayer {
         return "DAO_Options{" +
                 "options=" + options.toString() +
                 '}';
+    }
+
+    public Option getItemsByName(String name) {
+        if (dej.getType().equals(name)) {
+            return dej;
+        }
+        else {
+            if(lie.getType().equals(name)){
+                return lie;
+            }
+            else{
+                if(fu.getType().equals(name)){
+                    return fu;
+                }
+                else {
+                    return anni;
+                }
+            }
+        }
     }
 
     public static void main(String[] args)

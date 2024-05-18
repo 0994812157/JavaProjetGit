@@ -1,9 +1,13 @@
 package MVC.view.Gui;
 
+import MVC.controller.Controller;
+import MVC.model.entity.Employe;
+import MVC.view.ViewItems;
+
 import javax.swing.*;
 import java.awt.event.*;
 
-public class JDialogNouveauEmploye extends JDialog {
+public class JDialogNouveauEmploye extends JDialog implements ViewItems {
     private JPanel contentPane;
     private JButton buttonCreer;
     private JButton buttonAnnuler;
@@ -88,22 +92,56 @@ public class JDialogNouveauEmploye extends JDialog {
         dialog.pack();
         dialog.setVisible(true);
         System.exit(0);
-        System.out.println("Employe: " + dialog.getNom() + " - " + dialog.getPrenom() + " - " + dialog.getMDP() + " - " + dialog.getFonction());
+        System.out.println("Employee: " + dialog.getNom() + " - " + dialog.getPrenom() + " - " + dialog.getMDP() + " - " + dialog.getFonction());
     }
+    public Employe getitems(){
+        Employe employe=new Employe();
+        employe.setNom( getNom());
+        employe.setPrenom(getPrenom());
+        employe.setMdp(getMDP());
+        employe.setFonction(getFonction());
+        return  employe;
 
+    }
     public String getNom() {
-        return nom;
+        return textFieldNom.getText();
     }
 
     public String getPrenom() {
-        return prenom;
+        return textFieldPrenom.getText();
     }
 
     public String getMDP() {
-        return MDP;
+        return passwordFieldMDP.getToolTipText();
     }
 
     public String getFonction() {
-        return fonction;
+        return (String) comboBoxFonction.getSelectedItem();
+    }
+
+    @Override
+    public void showErroMessage(String message) {
+        JOptionPane.showMessageDialog(this,
+                message,
+                "Pour votre information...",
+                JOptionPane.ERROR_MESSAGE);
+
+    }
+
+    @Override
+    public void showMessage(String message) {
+        JOptionPane.showMessageDialog(null, message, "Confirmation", JOptionPane.INFORMATION_MESSAGE);
+
+    }
+
+    @Override
+    public void run() {
+        setVisible(true);
+    }
+
+    @Override
+    public void setController(Controller c) {
+        buttonCreer.setActionCommand("creeremp");
+        buttonCreer.addActionListener(c);
     }
 }

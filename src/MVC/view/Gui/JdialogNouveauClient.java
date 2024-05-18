@@ -1,5 +1,6 @@
 package MVC.view.Gui;
 
+import MVC.controller.Controller;
 import MVC.controller.Controlleur;
 import MVC.model.entity.Client;
 import MVC.view.ViewClient;
@@ -9,7 +10,7 @@ import javax.swing.*;
 import java.awt.event.*;
 import java.util.ArrayList;
 
-public class JdialogNouveauClient extends JDialog implements ViewClient {
+public class JdialogNouveauClient extends JDialog implements ViewItems {
     private JPanel contentPane;
     private JButton buttonCreer;
     private JButton buttonAnnuler;
@@ -82,55 +83,47 @@ public class JdialogNouveauClient extends JDialog implements ViewClient {
     }
 
     public String getNom() {
-        return nom;
+        return textFieldNom.getText();
     }
 
     public String getPrenom() {
-        return prenom;
+        return textFieldPrenom.getText();
     }
 
     public String getGSM() {
-        return gsm;
+        return textFieldGSM.getText();
     }
-//----------------------------------------------------------------
-    @Override
-    public Client promptForNewClient() {
-        return null;
-
-    }
-
-    @Override
-    public Client promptForUpdateClient(Client client) {
-        return null;
-    }
-
-    @Override
-    public Integer promptForClientById() {
-        return null;
+    public Client getitems(){
+        Client cli=new Client();
+        cli.setNom(getNom());
+        cli.setPrenom(getPrenom());
+        cli.setNumTel(getGSM());
+        System.out.println(cli);
+        return cli;
     }
 
     @Override
     public void showErroMessage(String message) {
-
+        JOptionPane.showMessageDialog(this,
+                message,
+                "Pour votre information...",
+                JOptionPane.ERROR_MESSAGE);
     }
 
     @Override
     public void showMessage(String message) {
-
-    }
-
-    @Override
-    public void displayListClient(ArrayList<Client> clients) {
-
+        JOptionPane.showMessageDialog(null, message, "Confirmation", JOptionPane.INFORMATION_MESSAGE);
     }
 
     @Override
     public void run() {
-
+        setVisible(true);
     }
 
     @Override
-    public void setController(Controlleur c) {
-
+    public void setController(Controller c) {
+        buttonCreer.addActionListener(c);
+        buttonAnnuler.addActionListener(c);
     }
+
 }
