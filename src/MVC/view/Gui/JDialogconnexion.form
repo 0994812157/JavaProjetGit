@@ -67,7 +67,7 @@
                   <text value="connexion"/>
                 </properties>
               </component>
-              <component id="caaeb" class="javax.swing.JTextField" binding="textField2">
+              <component id="7f86e" class="javax.swing.JTextField" binding="textField2">
                 <constraints>
                   <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
                     <minimum-size width="300" height="-1"/>

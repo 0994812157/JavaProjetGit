@@ -6,16 +6,27 @@ import MVC.model.entity.*;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-public class DAOClients implements DataAccesLayer {
+public class DAOClients implements DataAccesLayer<Client> {
     private ArrayList<Client> clients;
     private int idcourant = 1;
 
-    public DAOClients() {
+    public DAOClients() throws PersonneException {
         clients = new ArrayList<>();
+        clients.add(new Client("appart1","ffgtd", LocalDate.of(1998,2,17),"5005008"));
+        clients.add(new Client("cerises","ihhffgcvxd",LocalDate.of(2002,7,31),"04985620"));
+    }
+
+    public Client getItemByNP(String n,String p){
+        for (Client a : clients) {
+            if (a.getNom().equals(n) && a.getPrenom().equals(p)) {
+                return a;
+            }
+        }
+        return null;
     }
 
     @Override
-    public int addItem(Object client) {
+    public int addItem(Client client) {
         if (client instanceof Client) {
             ((Client) client).setNClient(idcourant++);
             clients.add((Client) client);
@@ -25,7 +36,7 @@ public class DAOClients implements DataAccesLayer {
     }
 
     @Override
-    public boolean updateItem(Object client) {
+    public boolean updateItem(Client client) {
         if (client instanceof Client) {
             Client updateItem = (Client) client;
             for (int i = 0; i < clients.size(); i++) {
@@ -45,13 +56,13 @@ public class DAOClients implements DataAccesLayer {
     }
 
     @Override
-    public boolean deleteItem(Object client) {
+    public boolean deleteItem(Client client) {
         return clients.remove(client);
     }
 
     @Override
-    public Object getItemById(int id) {
-        for (Object a : clients) {
+    public Client getItemById(int id) {
+        for (Client a : clients) {
             if (a instanceof Client && ((Client) a).getNClient() == id) {
                 return a;
             }
@@ -60,9 +71,9 @@ public class DAOClients implements DataAccesLayer {
     }
 
     @Override
-    public ArrayList<Object> getList() {
-        ArrayList<Object> copy = new ArrayList<>();
-        for (Object a : clients) {
+    public ArrayList<Client> getList() {
+        ArrayList<Client> copy = new ArrayList<>();
+        for (Client a : clients) {
             if (a instanceof Client) {
                 copy.add(((Client)a).clone());
             }
@@ -79,8 +90,8 @@ public class DAOClients implements DataAccesLayer {
 
     public static void main(String[] args)
     {
-        DataAccesLayer dao = new DAOClients();
         try {
+            DataAccesLayer dao = new DAOClients();
             dao.addItem(new Client());
             dao.addItem(new Client("appart1","ffgtd", LocalDate.of(1998,2,17),"5005008"));
             dao.addItem(new Client("cerises","ihhffgcvxd",LocalDate.of(2002,7,31),"04985620"));

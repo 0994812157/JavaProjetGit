@@ -6,17 +6,20 @@ import java.lang.Object;
 
 import java.util.ArrayList;
 
-public class DAOAppartements implements DataAccesLayer {
+public class DAOAppartements implements DataAccesLayer<Appartement> {
     private ArrayList<Appartement> appartements;
     private static int idcourant = 1;
 
-    public DAOAppartements() {
+    public DAOAppartements() throws AppartementException {
         appartements = new ArrayList<>();
+        ArrayList<Image> im1 = new ArrayList<Image>();
+        appartements.add(new Appartement("appart1",im1,"8888888888",500.0,2,200));
+        appartements.add(new Appartement("cerises",im1,"ihhffgcvxd",600.06f,8,300));
     }
 
 
     @Override
-    public int addItem(Object appart) {
+    public int addItem(Appartement appart) {
         if (appart instanceof Appartement) {
             ((Appartement) appart).setId(idcourant++);
             appartements.add((Appartement) appart);
@@ -26,7 +29,7 @@ public class DAOAppartements implements DataAccesLayer {
     }
 
     @Override
-    public boolean updateItem(Object appart) {
+    public boolean updateItem(Appartement appart) {
         if (appart instanceof Appartement) {
             Appartement updateItem = (Appartement) appart;
             for (int i = 0; i < appartements.size(); i++) {
@@ -46,13 +49,13 @@ public class DAOAppartements implements DataAccesLayer {
     }
 
     @Override
-    public boolean deleteItem(Object appart) {
+    public boolean deleteItem(Appartement appart) {
         return appartements.remove(appart);
     }
 
     @Override
-    public Object getItemById(int id) {
-        for (Object a : appartements) {
+    public Appartement getItemById(int id) {
+        for (Appartement a : appartements) {
             if (a instanceof Appartement && ((Appartement) a).getId() == id) {
                 return a;
             }
@@ -61,9 +64,9 @@ public class DAOAppartements implements DataAccesLayer {
     }
 
     @Override
-    public ArrayList<Object> getList() {
-        ArrayList<Object> copy = new ArrayList<>();
-        for (Object a : appartements) {
+    public ArrayList<Appartement> getList() {
+        ArrayList<Appartement> copy = new ArrayList<>();
+        for (Appartement a : appartements) {
             if (a instanceof Appartement) {
                 copy.add(((Appartement)a).clone());
             }
@@ -80,8 +83,9 @@ public class DAOAppartements implements DataAccesLayer {
 
     public static void main(String[] args)
     {
-        DataAccesLayer dao = new DAOAppartements();
+
         try {
+            DataAccesLayer<Appartement> dao = new DAOAppartements();
             dao.addItem(new Appartement());
             ArrayList<Image> im1 = new ArrayList<Image>();
             dao.addItem(new Appartement("appart1",im1,"8888888888",500.0,2,200));
