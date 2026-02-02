@@ -93,7 +93,7 @@ public class Reservation {
     public void setAppart(Appartement appart) {
         this.appart = appart;
     }
-    // Méthode toString pour afficher les informations de la réservation
+
     @Override
     public String toString() {
         return "Reservation{" +
@@ -124,18 +124,13 @@ public class Reservation {
 
     // Méthode main pour tester
     public static void main(String[] args) {
-        // Exemple de création d'une liste d'options
         List<Option> options = new ArrayList<Option>();
-        // Ajoutez des options ici, exemple : options.add(new Option("NomOption", prix));
-        // Note : La classe Option doit être correctement définie dans votre projet
         Client cli = new Client();
         Employe emp = new Employe();
         Appartement appart = new Appartement();
 
-        // Création d'une réservation pour tester
         Reservation reservationTest = new Reservation(1, 3, LocalDate.of(2024, 3, 29), options,cli,emp,appart);
 
-        // Affichage de la réservation
         System.out.println(reservationTest);
     }
 
